@@ -77,21 +77,6 @@
 					<Markdown content={data.skill.description} />
 				{/if}
 			</div>
-			<div class="self-stretch mb-3">
-				<CardDivider />
-			</div>
-			<div class="flex flex-row px-4 gap-2 self-stretch flex-wrap ">
-				{#each related as item}
-					<div
-						class="border rounded border-[color:var(--border)] px-2.5 py-1 text-[var(--tertiary-text)]"
-					>
-						<a class="flex flex-row items-center" href={`${base}/${item.type}?q=${item.name}`}>
-							<CardLogo src={item.img} alt={item.name} radius={'0px'} size={17} classes="mr-2" />
-							<span class="text-[0.9em]">{item.display}</span>
-						</a>
-					</div>
-				{/each}
-			</div>
 		</div>
 	{/if}
 </div>
