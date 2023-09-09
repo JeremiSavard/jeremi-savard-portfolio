@@ -4,32 +4,33 @@ import type { Project } from './types';
 
 const MY_PROJECTS: Array<Project> = [
 	{
-		slug: 'slick-portfolio-angular',
-		color: '#5e95e3',
+		slug: 'ubivius',
+		color: '#129f12',
 		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
-		logo: Assets.Unknown,
-		name: 'Slick Portfolio',
+			'An open-source cloud based microservice framework for online games. This was the graduate project I worked on. I mainly worked on microservice in Go, authentication and the deployment of game serves using Kubernetes',
+		links: [{ to: 'https://github.com/Ubivius', label: 'GitHub' }],
+		logo: Assets.Ubivius,
+		name: 'Ubivius',
 		period: {
-			from: new Date()
+			from: new Date('2020-05-01'),
+			to: new Date('2021-12-17')
 		},
-		skills: getSkills('angular', 'ts', 'tailwind'),
-		type: 'Website Template'
+		skills: getSkills('Go', 'Docker', 'Kubernetes'),
+		type: 'Online game microservices'
 	},
 	{
-		slug: 'slick-portfolio-svelte',
-		color: '#ff3e00',
+		slug: 'sorting-visualizer',
+		color: '#536fd8',
 		description:
-			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
+			'A sorting visualizer I created using Next.js',
 		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
-		logo: Assets.Svelte,
-		name: 'Slick Portfolio',
+		logo: Assets.ReactJs,
+		name: 'Sorting Visualizer',
 		period: {
-			from: new Date()
+			from: new Date('2023-09')
 		},
-		skills: getSkills('svelte', 'ts', 'tailwind', 'sass'),
-		type: 'Website Template'
+		skills: getSkills('react'),
+		type: 'Web App'
 	}
 ];
 

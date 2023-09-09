@@ -3,7 +3,9 @@ import type { Skill } from './types';
 import svelte from './md/svelte.md?raw';
 import aws from './md/aws.md?raw';
 import csharp from './md/csharp.md?raw';
+import go from './md/go.md?raw';
 import java from './md/java.md?raw';
+import kubernetes from './md/kubernetes.md?raw';
 import python from './md/python.md?raw';
 import postgresql from './md/postgresql.md?raw';
 import docker from './md/docker.md?raw';
@@ -30,11 +32,32 @@ const MY_SKILLS = [
 		name: 'C#'
 	}),
 	s({
+		slug: 'Docker',
+		color: 'blue',
+		description: docker,
+		logo: Assets.Docker,
+		name: 'Docker'
+	}),
+	s({
+		slug: 'Go',
+		color: 'blue',
+		description: go,
+		logo: Assets.Go,
+		name: 'Go'
+	}),
+	s({
 		slug: 'Java',
 		color: 'red',
 		description: java,
 		logo: Assets.Java,
 		name: 'Java'
+	}),
+	s({
+		slug: 'Kubernetes',
+		color: 'blue',
+		description: kubernetes,
+		logo: Assets.Kubernetes,
+		name: 'Kubernetes'
 	}),
 	s({
 		slug: 'Python',
@@ -49,13 +72,6 @@ const MY_SKILLS = [
 		description: postgresql,
 		logo: Assets.PostgreSQL,
 		name: 'PostgreSQL'
-	}),
-	s({
-		slug: 'Docker',
-		color: 'blue',
-		description: docker,
-		logo: Assets.Docker,
-		name: 'Docker'
 	}),
 	s({
 		slug: 'react',

@@ -4,4 +4,4 @@
 
     * Manage images on ECR (aws)
 
-    * Deploy containers on ECS or on EC2 instances (aws)
+    * Deploy containers on ECS or EC2 instances (aws)

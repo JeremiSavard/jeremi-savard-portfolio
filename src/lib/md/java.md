@@ -2,8 +2,8 @@
 
     * Develop Java microservices
 
-    * Use framework Spring Boot
+    * Use the framework Spring Boot
 
     * Manage application libraries with Maven
 
-    * Code versionning with Github
+    * Code versioning with Github

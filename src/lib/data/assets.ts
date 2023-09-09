@@ -1,5 +1,11 @@
 import type { Asset } from '$lib/types';
 import { theme } from '$lib/stores/theme';
+import ubiviusIcon from './ubivius_elephant.png'
+import laplaceIcon from './laplace_logo_horiz.svg'
+import cgiIcon from './CGI_logo.png'
+import sherwebIcon from './Sherweb-Logo.png'
+import ubisoftIcon from './Logo_Ubisoft_Montreal.png'
+import ibmIcon from './ibm-logo.jpg'
 
 const gh = (file: string) =>
 	`https://raw.githubusercontent.com/RiadhAdrani/slick-portfolio-svelte/assets/logos/${file}`;
@@ -27,7 +33,7 @@ const Assets = {
 	Scrapy: a('scrapy.png'),
 	Selenium: a('selenium.svg'),
 	Docker: a('docker.svg'),
-	Kubernetes: a('kubernetees.svg'),
+	Kubernetes: a('kubernetes.svg'),
 	Csharp: a('csharp.svg'),
 	Xamarin: a('xamarin.svg'),
 	TypeScript: a('ts.png'),
@@ -67,7 +73,13 @@ const Assets = {
 	Nuxt: a('nuxt.png'),
 	Vite: a('vite.png'),
 	Vitest: a('vitest.png'),
-	Jest: a('jest.png')
+	Jest: a('jest.png'),
+	Ubivius: ubiviusIcon,
+	LaplaceInsights: laplaceIcon,
+	CGI: cgiIcon,
+	IBM: ibmIcon,
+	Ubisoft: ubisoftIcon,
+	Sherweb: sherwebIcon
 };
 
 export default Assets;

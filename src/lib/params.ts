@@ -1,6 +1,7 @@
 import MY_EXPERIENCES from './experiences.params';
 import MY_PROJECTS from './projects.params';
 import MY_SKILLS from './skills.params';
+import MY_RESUME from './resume.params';
 import {
 	Platform,
 	type HomePageParams,
@@ -46,7 +47,7 @@ export const HOME: HomePageParams = {
 	name: 'Jeremi',
 	lastName: 'SAVARD',
 	description:
-		'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, rerum. Debitis accusantium deleniti enim iste dignissimos? Similique, exercitationem! Odit vero, numquam quae ratione maxime sunt reiciendis laudantium quaerat iure ipsum!',
+		'Software Developer and DevOps - Based in Montreal',
 	links: [
 		{ platform: Platform.GitHub, link: 'https://github.com/JeremiSavard' },
 		{
@@ -80,8 +81,8 @@ export const SKILLS: SkillsPageParams = {
 };
 
 export const RESUME: ResumePageParams = {
-	title: 'Resumé',
-	item: ''
+	title: 'Resume',
+	item: MY_RESUME
 };
 
 export const SEARCH: SearchPageParams = {

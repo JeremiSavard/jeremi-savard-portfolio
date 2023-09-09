@@ -15,6 +15,6 @@ The compiler itself is written in TypeScript. Its source code is licensed under 
 <button on:click={() => count = count + 1}>Count</button>
 ```
 
-I am currently learning this new framework and hoping to be proficient with it in a near future!
+I am currently learning this new framework and hoping to be proficient with it in the near future!
 
 Also, this portfolio was made with SvelteKit.
