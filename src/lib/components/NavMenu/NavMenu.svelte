@@ -69,7 +69,7 @@
 				{:else}
 					<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 32 32"
 						><g fill="none" fill-rule="evenodd" transform="translate(-442 -200)"
-							><g id="sun-icon" transform="translate(356 144)"
+							><g id="sun-icon" fill="var(--secondary-text)" transform="translate(356 144)"
 								><path
 									fill="var(--secondary-text)"
 									fill-rule="nonzero"
