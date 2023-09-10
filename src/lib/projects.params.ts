@@ -23,7 +23,7 @@ const MY_PROJECTS: Array<Project> = [
 		color: '#536fd8',
 		description:
 			'A sorting visualizer I created using Next.js',
-		links: [{ to: 'https://jeremisavard.github.io/Not-another-sorting-visualizer/', label: 'GitHub' }],
+		links: [{ to: 'https://jeremisavard.github.io/Not-another-sorting-visualizer/', label: 'WebApp (desktop only)' }],
 		logo: Assets.ReactJs,
 		name: 'Sorting Visualizer',
 		period: {
