@@ -19,21 +19,6 @@ export const toggleTheme = (value?: boolean) =>
 
 		document.querySelector(':root')?.setAttribute('data-theme', $v ? 'dark' : 'light');
 
-		// Get both moon and sun icons
-		const moonIcon = document.querySelector('#moon-icon') as HTMLElement;
-		const sunIcon = document.querySelector('#sun-icon') as HTMLElement;
-	
-		// Update icon colors based on the theme
-		if (moonIcon && sunIcon) {
-		  if ($v) {
-			moonIcon.style.fill = 'var(--secondary-text-dark)';
-			sunIcon.style.fill = 'var(--secondary-text-light)';
-		  } else {
-			moonIcon.style.fill = 'var(--secondary-text-light)';
-			sunIcon.style.fill = 'var(--secondary-text-dark)';
-		  }
-		}
-
 		return $v;
 	});
 
