@@ -35,7 +35,7 @@ export const onHydrated = () => {
 	const fromStore = localStorage.getItem(key);
 
 	if (!fromStore) {
-		if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+		if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
 			// dark mode
 			toggleTheme(true);
 		}
