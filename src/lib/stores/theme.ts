@@ -14,10 +14,19 @@ export const theme = writable<boolean>(false);
 export const toggleTheme = (value?: boolean) =>
 	theme.update((it) => {
 		const $v = typeof value === 'boolean' ? value : !it;
+		const themeValue = $v ? 'dark' : 'light';
 
 		updateLocalStorage($v);
 
-		document.querySelector(':root')?.setAttribute('data-theme', $v ? 'dark' : 'light');
+		// Ensure that data-theme is always set to 'dark' or 'light'
+		if (themeValue === 'dark' || themeValue === 'light') {
+			document.querySelector(':root')?.setAttribute('data-theme', themeValue);
+		} else {
+			// Default to 'light' if the themeValue is invalid
+			document.querySelector(':root')?.setAttribute('data-theme', 'light');
+		}
+
+		console.log('Theme toggled:', $v);
 
 		return $v;
 	});
